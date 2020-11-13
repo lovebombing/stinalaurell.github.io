@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Here goes meta data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mental health tool">
+    <title>Love bomb tool</title>
+    <link href="style.css" rel="stylesheet" />
+
+    
+  </head>
+  <body>
+    <!-- Here goes content -->
+    
+     <div class="dropdown">
+      <button class="dropbtn" onclick="showDropdown();">RESOURCES↓</button>
+      <div class="dropdown-content" id="myDropdown">
+        <section class="space"></section>
+        <p class="a"><b>BODY</b></p>
+        <p class="a"><b>STRESS</b></p>
+        <p class="a"><b>SELF-LOVE</b></p>
+        <p class="a"><b>SCHOOL</b></p>
+        <p class="a"><b>FRIENDSHIP</b></p>
+        <p class="a"><b>LOVE</b></p>
+          
+        <!--//BODY//-->
+
+        <ul class="li1">
+          <a
+            href="https://www.diggitmagazine.com/articles/body-positivity-online"
+            target="_blank"
+             rel="noopener"
+             class="gap"
+            ><li>Body positivism online</li></a
+          >
+          <a href="https://paigefieldsted.com/blog/body-positivity-quotes1" target="_blank" class="gap" rel="noopener"><li>Positive quotes</li></a>
+          <a
+            href="https://www.mind.org.uk/information-support/types-of-mental-health-problems/body-dysmorphic-disorder-bdd/useful-contacts"
+            target="_blank"
+             rel="noopener"
+             class="gap"
+            ><li>Helpline</li></a
+          >
+        </ul>
+
+
+        <!--//STRESS//-->
+
+        <ul class="li3">
+          <a
+            href="https://www.verywellmind.com/tips-to-reduce-stress-3145195"
+            target="_blank" rel="noopener" class="gap"
+            ><li>Stress relievers</li></a
+          >
+           <a href="https://www.helpguide.org/articles/stress/stress-management.htm" target="_blank" rel="noopener" class="gap"><li>Stress management</li></a>
+          <a href="https://www.stress.org.uk/contact/" target="_blank" class="gap" rel="noopener"><li>Helpline</li></a>
+         
+        </ul>
+
+        <!--//SELF-LOVE//-->
+
+        <ul class="li4">
+          <a
+            href="https://wanderlust.com/journal/10-steps-to-self-love-success"
+            target="_blank" rel="noopener" class="gap"
+            ><li>Achieving self-love</li></a
+          >
+          <a href="https://www.ted.com/talks/shanti_schiks_the_power_of_self_love" target="_blank" rel="noopener" class="gap"><li>TedTalk</li></a>
+          <a href="https://www.mind.org.uk/information-support/helplines/" target="_blank" rel="noopener" class="gap"><li>Helpline</li></a>
+        </ul>
+
+        <!--//SCHOOL//-->
+
+        <ul class="li5">
+          <a
+            href="https://www.learnpsychology.org/student-stress-anxiety-guide/"
+            target="_blank" rel="noopener" class="gap"
+            ><li>Student guide</li></a
+          >
+          <a href="https://www.edutopia.org/article/science-behind-student-stress" target="_blank" rel="noopener" class="gap"><li>Scientific article</li></a>
+          <a href="https://kidshelpline.com.au/get-help/phone-counselling/" target="_blank" rel="noopener" class="gap"><li>Helpline</li></a>
+        </ul>
+
+        <!--//FRIENDSHIP//-->
+
+        <ul class="li6">
+          <a
+            href="https://www.instyle.com/lifestyle/no-such-thing-as-toxic-friends-mental-health"
+            target="_blank" rel="noopener" class="gap"
+            ><li>Toxic friendships</li></a
+          >
+          <a href="https://www.psychologytoday.com/us/basics/friends" target="_blank" rel="noopener" class="gap"><li>Nurture of friendships</li></a>
+          <a href="https://www.themix.org.uk/get-support/speak-to-our-team" target="_blank" rel="noopener" class="gap"><li>Helpline</li></a>
+        </ul>
+
+        <!--//LOVE//-->
+
+        <ul class="li7">
+          <a href="https://www.huffpost.com/entry/16-characteristics-of-real-love_b_6237802?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAMvtUzZvRdQE60ge2HnCCPjqFj481vjPXC2i_V80SxgQaVXuCx19sjKBTJSMwG9629KnftIiwpvwwfSpLScUT8L69hT3EWQduuNZ_vM0eImC-Ehak9soOlvl0dK-sjUg2LjhhOd4Il2YroI63SWlu1wuUj09xM1RZUXYX9mXCMac"
+            target="_blank" rel="noopener" class="gap"><li>What is true love?</li></a>
+          <a href="https://www.psychologytoday.com/us/articles/200212/the-power-love" rel="noopener" target="_blank" class="gap"><li>The power of love</li></a>
+          <a href="https://www.relate.org.uk/relationship-help/talk-someone" target="_blank" rel="noopener" class="gap"><li>Helpline</li></a>
+        </ul>
+          </div>
+    </div>
+
+    
+
+  <fieldset>
+    <h1 class="legend">PLEASE DUMP NEGATIVE THOUGHTS HERE</h1>
+  <textarea class = "input"
+    type = "text"
+    id = "txtThought" 
+  aria-label="PLEASE DUMP NEGATIVE THOUGHTS HERE" ></textarea> 
+    <input class="button"
+         type = "button"
+    value = "TRANSFORM"
+    onclick="playAnimation(); clickMe(this); generateQuote();"/>
+  
+  </fieldset>
+    
+    
+    
+   <div id="info"
+         class="alert"
+        onclick="this.style.display='none'">
+      <p class="bold">Psst...<p>
+      </p>Want more support? Click on a subject under <strong>RESOURCES</strong></p>
+    </div>
+   
+  
+  <div id="bm" class="animation"></div>
+    <script src="lottie.js"></script>
+    <script src="script.js"></script>
+   
+   
+  </body>
+</html>
